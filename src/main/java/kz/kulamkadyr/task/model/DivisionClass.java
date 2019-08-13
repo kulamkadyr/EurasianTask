@@ -19,9 +19,9 @@ public class DivisionClass {
     private DivisionClass() {
 
         Map<Integer, String> map = new HashMap<>();
-        map.put(7, "boo");
         map.put(3, "foo");
         map.put(5,"bar");
+        map.put(7, "boo");
 
         numString=map;
     }
