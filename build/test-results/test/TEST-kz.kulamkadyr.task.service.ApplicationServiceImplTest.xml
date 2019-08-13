@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="kz.kulamkadyr.task.service.ApplicationServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-12T16:45:14" hostname="DESKTOP-6LMKATA" time="0.014">
-  <properties/>
-  <testcase name="getMessage" classname="kz.kulamkadyr.task.service.ApplicationServiceImplTest" time="0.014"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
