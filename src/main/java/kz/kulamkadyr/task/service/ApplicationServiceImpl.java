@@ -13,11 +13,6 @@ public class ApplicationServiceImpl implements ApplicationService {
     public String getMessage(int number) {
 
         /**
-         * Создаем объект map и добавляем в него данные
-         */
-
-
-        /**
          * Создаем объект класса DivisionClass с помощью метода getInstance
          */
         DivisionClass divisionClass = DivisionClass.getInstance();

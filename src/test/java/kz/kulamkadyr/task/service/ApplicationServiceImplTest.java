@@ -14,15 +14,10 @@ public class ApplicationServiceImplTest {
     @Test
     public void getMessage() {
 
-        Map<Integer, String> map = new HashMap<>();
-        map.put(3, "foo");
-        map.put(5,"bar");
-
-        DivisionClass divisionClass = new DivisionClass(map);
+        DivisionClass divisionClass = DivisionClass.getInstance();
 
         String expectedMessage = "foobar";
         String actualMessgae = divisionClass.getMessage(15);
-
 
         Assert.assertEquals(expectedMessage, actualMessgae);
     }
