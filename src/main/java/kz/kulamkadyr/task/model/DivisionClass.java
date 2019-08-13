@@ -1,21 +1,41 @@
 package kz.kulamkadyr.task.model;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Класс DivisionClass со свойствами numString.
+ * Класс одиночка DivisionClass
  */
 public class DivisionClass {
+
+    /**Поле для хранения объекта-одиночки*/
+    private static DivisionClass instance;
 
     /** Поле numString*/
     Map<Integer, String> numString;
 
-    /**
-     * Конструктор - создание нового объекта с Map<int, String>
-     * @param numString - numString
+    /**Приватный конструктор одиночки
+     * где создается объект map и в него добавляем данные*/
+    private DivisionClass() {
+
+        Map<Integer, String> map = new HashMap<>();
+        map.put(7, "boo");
+        map.put(3, "foo");
+        map.put(5,"bar");
+
+        numString=map;
+    }
+
+    /** Основной статический метод одиночки служит альтернативой
+    * конструктору и является точкой доступа к экземпляру этого
+    * класса.
      */
-    public DivisionClass(Map<Integer, String> numString) {
-        this.numString = numString;
+    public static DivisionClass getInstance()
+    {
+        if(instance == null) {
+            instance = new DivisionClass();
+        }
+        return instance;
     }
 
     /**
