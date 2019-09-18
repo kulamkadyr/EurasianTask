@@ -5,5 +5,6 @@ public interface ApplicationService {
     /**
     * Метод getMessage
     */
+
     String getMessage(int number);
 }
